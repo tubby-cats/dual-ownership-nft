@@ -4,10 +4,10 @@ Opensea only allows EOAs to make changes to collections, which makes it impossib
 
 This contract establishes a second owner that can change the EOA owner, this way a multisig or an on-chain DAO can give ownership to an EOA and later claim it back, making it impossible to rug.
 
-In short, it creates a dual ownership model with an admin owner that can be set to a multisig or DAO.
+In short, this contract creates a dual ownership model with an admin that can be set to a multisig or DAO.
 
 ## Usage
-Just import [`MultisigOwnable`](./contracts/MultisigOwnable.sol) into your contract and use the `onlyRealOwner` modifier for any functions that need to have restricted access
+Just import [`MultisigOwnable`](./contracts/MultisigOwnable.sol) into your contract and use the `onlyRealOwner` modifier for any functions that need to have restricted access.
 
 ## Example
 ```solidity
