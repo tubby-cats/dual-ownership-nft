@@ -27,7 +27,7 @@ abstract contract MultisigOwnable is Ownable {
         realOwner = newRealOwner;
     }
 
-    function transferLowerOwnership(address newOwner) public onlyRealOwner {
+    function transferOwnership(address newOwner) public override onlyRealOwner {
         _transferOwnership(newOwner);
     }
 }
